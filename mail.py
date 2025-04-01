@@ -13,8 +13,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Email Configuration (Using Environment Variables)
-EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_ADDRESS = "msecasthra2k25@gmail.com"
+EMAIL_PASSWORD = "hneoozkkurdtwjwl"
 
 @app.route("/send-confirmation", methods=["POST"])
 def send_confirmation():
