@@ -10,7 +10,7 @@ from dotenv import load_dotenv  # Load environment variables securely
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 # Email Configuration (Using Environment Variables)
 EMAIL_ADDRESS = "msecasthra2k25@gmail.com"
